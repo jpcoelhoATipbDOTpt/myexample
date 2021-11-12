@@ -1,5 +1,5 @@
 hardware:
-    title: hardware
+    title: Hardware
     type: object
     description: example
     properties:
