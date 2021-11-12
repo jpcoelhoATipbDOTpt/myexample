@@ -13,7 +13,7 @@ components:
     Hardware:
       $ref: "https://raw.githubusercontent.com/jpcoelhoATipbDOTpt/myexample/main/hardware.yaml#/hardware"
     Sensor:
-      $ref: "https://raw.githubusercontent.com/jpcoelhoATipbDOTpt/myexample/main/sensor.yaml#/sensor"
+      $ref: "https://raw.githubusercontent.com/jpcoelhoATipbDOTpt/myexample/main/sensors.yaml#/sensors"
       
 paths:
   /ngsi-ld/v1/entities:
