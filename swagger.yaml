@@ -1,0 +1,27 @@
+openapi: 3.0.0
+
+# General Data Model Information
+info:
+  title: example
+  description: example
+  version: 0.0.1
+  
+components:
+  schemas: 
+    Process:
+      $ref: "https://raw.githubusercontent.com/jpcoelhoATipbDOTpt/myexample/main/process.yaml#/process"
+    Hardware:
+      $ref: "https://raw.githubusercontent.com/jpcoelhoATipbDOTpt/myexample/main/hardware.yaml#/hardware"
+    Sensor:
+      $ref: "https://raw.githubusercontent.com/jpcoelhoATipbDOTpt/myexample/main/sensor.yaml#/sensor"
+      
+paths:
+  /ngsi-ld/v1/entities:
+    get:
+      responses:
+        '200':
+          description: 'OK'
+          content:
+            application/ld+json:
+              schema:
+                type: object
