@@ -1,4 +1,4 @@
-node:
+hardware:
     title: hardware
     type: object
     description: example
