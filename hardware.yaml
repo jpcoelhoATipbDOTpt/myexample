@@ -1,0 +1,19 @@
+node:
+    title: hardware
+    type: object
+    description: example
+    properties:
+        id:
+            description: hardware
+            type: string
+            format: uri
+            example: urn:hardwareNBR
+            x-ngsi:
+                type: Property
+                                 
+        sensors:
+            description: Enumerate the sensors attached to the IoT device.
+            type: array
+            items: 
+                  $ref: https://raw.githubusercontent.com/jpcoelhoATipbDOTpt/myexample/main/sensors.yaml#/sensors
+            example: [energyConsumption,waterConsumption]
